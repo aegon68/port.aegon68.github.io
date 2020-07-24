@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'/>
+	<title>Coursera MiniProject</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+
+	<h1>Filter Fun</h1>
+	<canvas id="canvas"></canvas>
+	
+	<h2>Load Image</h2>
+		<input type="file" value="choose file" id="file" multiple="false" accept="image/*" onchange="loadImage()">
+
+	<h2>Choose Filters</h2>
+
+	<div id="filters">
+		<input type="button" value="Red Filter" id="btnRed" onclick="redFilter()">
+		<input type="button" value="Gray Filter" id="btnGray" onclick="grayFilter()">
+		<input type="button" id="btnRainbow" value="Rainbow Filter" onclick="rainbowFilter()">
+		
+		<br/>
+		<input type="button" value="Reset Image" id="resetImage" onclick="resetImage()">
+	</div>
+
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
